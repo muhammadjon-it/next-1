@@ -25,50 +25,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <nav className="flex items-center justify-between px-20 py-5 border-gray-600 bg-black border-b-2 text-white">
-          <div>
-            <Link href={"/"} className="text-xl font-[600]">VELOCITY.</Link>
-          </div>
+        <nav className="flex items-center justify-between px-20 py-5 bg-[gray] border-b-2 text-white">
+         
           <div className="flex items-center gap-4 text-sm uppercase">
             <Link href={"/"} className="">Home</Link>
-            <Link href={"/cars"}>Cars</Link>
             <Link href={"/about"}>About</Link>
           </div>
-          <div className="flex items-center gap-3 bg-gray-700 px-3 py-2 rounded-lg">
-            <h1>ENQUIRE</h1>
-            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0.979987 7.742L0.0559874 6.804L5.64199 1.232H-1.26362e-05V-4.76837e-07H7.20999L7.75599 0.546V7.77H6.52399V2.198L0.979987 7.742Z" fill="#C7A879" />
-            </svg>
-          </div>
+          
         </nav>
         {children}
-        <footer className="bg-[#060707] p-20 text-white">
-          <div className="flex gap-14">
-            <div>
-              <p className="text-2xl font-[600] tracking-[2px]">VELOCITY.</p>
-              <p className="text-[gray] py-4 w-91">A considered collection of exceptional automobiles. Curated for those who appreciate the drive.</p>
-              <p className="text-[#C7A879] font-[600]">INSTAGRAM   ·   YOUTUBE   ·   LINKEDIN</p>
-            </div>
-            <div className="">
-              <div className="flex gap-5">
-                <div className="text-[13px]">
-                  <p className="text-[#C7A879] font-[600] tracking-wide">EXPLORE</p>
-                  <p className="py-3 text-[16px] tracking-wide">Home</p>
-                </div>
-                <div className="text-[13px]">
-                  <p className="text-[#C7A879] font-[600] tracking-wide">GET IN TOUCH</p>
-                  <p className="py-3 text-[16px] tracking-wide">Private enquiries</p>
-                </div>
-              </div>
-              <p className="text-[18px] text-[gray] tracking-wide">Our collection hello@velocity.auto</p>
-              <br /> 
-              <p className="text-[18px] text-[gray] tracking-wide">About Velocity +1 800 555 0148</p>
-            </div>
-          </div> <br />  <br />
-          <div className="border-t-2 border-[#2A2D2F]">
-            <p className="text-[gray] pt-10 text-sm">© 2026 VELOCITY AUTOMOTIVE. ALL RIGHTS RESERVED. PRIVACY   ·   TERMS</p>
-          </div>
-        </footer>
+      
       </body>
     </html>
   );
